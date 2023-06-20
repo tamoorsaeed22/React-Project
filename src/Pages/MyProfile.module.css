@@ -1,0 +1,16 @@
+.MyProfileSection {
+  width: 80%;
+  height: auto;
+  max-height: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.MyProfileMissionsList,
+.MyProfileRocketsList {
+  border: 1px solid grey;
+  width: 40%;
+}

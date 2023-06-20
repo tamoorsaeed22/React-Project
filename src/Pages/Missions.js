@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Header from '../Components/Header';
-import { fetchMissions } from '../app/features/missionsReducer';
+import { fetchMissions } from '../app/features/missionReducer';
 import styles from './Missions.module.css';
 
 const Missions = () => {

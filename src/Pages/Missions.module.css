@@ -1,24 +1,24 @@
 table {
-    margin: 2rem auto;
-    border-collapse: collapse;
+  margin: 2rem auto;
+  border-collapse: collapse;
 }
 
 tr:nth-child(odd) {
-    background-color: #ececec;
+  background-color: #ececec;
 }
 
 td {
-    border: 1px solid #ececec;
-    max-width: 35rem;
-    padding: 0.6rem
+  border: 1px solid #ececec;
+  max-width: 35rem;
+  padding: 0.6rem;
 }
 
 thead td {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 thead td,
 .mission_name {
-    font-weight: bold;
-    text-align: left;
+  font-weight: bold;
+  text-align: left;
 }

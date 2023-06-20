@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+/* General Styling */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-logo-and-name {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-logo {
+  width: 64px;
+}
+
+/* Rockets Component Styling Start */
+.rockets-container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 30px;
+}
+
+.rocket-card {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  gap: 30px;
+}
+
+.rocket-img {
+  width: 20%;
+  height: inherit;
+  border: unset;
+}
+
+.rocket-infos-div {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rocket-infos-div h1 {
+  font-size: 20px;
+}
+
+.rocket-infos-div button {
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.nonReservedStyle {
+  background: hsl(211deg 100% 50%);
   color: white;
+  width: 150px;
+  border: unset;
+  padding: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.reservedStyle {
+  background: hsl(0deg 0% 100%);
+  color: hsl(204deg 6% 65%);
+  width: 180px;
+  border: 1px solid hsl(210deg 6% 81%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reservedSpanStyle {
+  display: inline;
+  background: #2eabbf;
+  color: white;
+  width: 35px;
+  height: 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px;
 }

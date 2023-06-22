@@ -55,6 +55,10 @@ button {
   font-size: 20px;
 }
 
+table button {
+  padding: 1rem 2rem;
+}
+
 .rocket-infos-div button {
   text-transform: capitalize;
   font-size: 18px;
@@ -86,14 +90,6 @@ button {
   font-size: 12px;
   border-radius: 5px;
   padding: 2px;
-}
-
-table button {
-  padding: 1rem 2rem;
-}
-
-table button {
-  padding: 1rem 2rem;
 }
 
 table tbody td span {

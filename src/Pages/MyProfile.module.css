@@ -1,0 +1,25 @@
+.myProfileSection {
+  display: flex;
+  margin: 1rem 10rem;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.myProfileMissionsList,
+.myProfileRocketsList {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.myProfileMissionsList h1,
+.myProfileRocketsList h1 {
+  text-align: center;
+}
+
+.myProfileMissionsList li,
+.myProfileRocketsList li {
+  border: 1px solid #ececec;
+  border-collapse: collapse;
+  padding: 0.75rem;
+  margin: 0.25rem auto;
+}

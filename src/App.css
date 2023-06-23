@@ -40,7 +40,8 @@ button {
 }
 
 .rocket-img {
-  width: 300px;
+  width: 20%;
+  height: inherit;
   border: unset;
 }
 
@@ -53,10 +54,6 @@ button {
 
 .rocket-infos-div h1 {
   font-size: 20px;
-}
-
-table button {
-  padding: 1rem 2rem;
 }
 
 .rocket-infos-div button {
@@ -92,11 +89,37 @@ table button {
   padding: 2px;
 }
 
-table tbody td span {
-  background-color: rgb(71, 70, 70);
-  padding: 0.3rem 1rem;
-  border: none;
-  border-radius: 8rem;
-  color: white;
-  font-size: 0.7rem;
+.joinStyle,
+.nonjoinStyle {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.joinStyle {
+  color: red;
+  border: 1px solid red;
+}
+
+.nonjoinStyle {
+  color: gray;
+  border: 1px solid gray;
+}
+
+.joinSpanStyle,
+.nonjoinSpanStyle {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.joinSpanStyle {
+  background-color: #2f95a5;
+}
+
+.nonjoinSpanStyle {
+  background-color: gray;
 }

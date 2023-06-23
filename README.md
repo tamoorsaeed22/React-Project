@@ -53,13 +53,13 @@ npm run start
 
 ## Authors
 
-👤 **Brahim didi**
+👤 **Tamoor Saeed**
 
 - GitHub: [@tamoorsaeed22](https://github.com/tamoorsaeed22)
 - Twitter: [@twitterhandle](https://www.linkedin.com/in/tamoor-saeed-58912a233/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Talha Zuberi**
+👤 **Wael Elsafty**
 
 - GitHub: [@waelelsafty07](https://github.com/waelelsafty07)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/waelelsafty07/)

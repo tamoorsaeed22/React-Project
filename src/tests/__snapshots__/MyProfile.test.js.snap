@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile Test renders correctly 1`] = `
+Array [
+  <header>
+    <div
+      className="header-logo-and-name"
+    >
+      <img
+        alt="planet logo"
+        className="header-logo"
+        src="planet.png"
+      />
+      <h1>
+        Space Travelers' Hub
+      </h1>
+    </div>
+    <nav>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontWeight": "bold",
+            "textDecoration": "underline",
+          }
+        }
+      >
+        Rockets
+      </a>
+      <a
+        className=""
+        href="/Missions"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontWeight": "normal",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Missions
+      </a>
+      <a
+        className="profile"
+        href="/MyProfile"
+        onClick={[Function]}
+        style={
+          Object {
+            "fontWeight": "normal",
+            "textDecoration": "none",
+          }
+        }
+      >
+        My Profile
+      </a>
+    </nav>
+  </header>,
+  <section
+    className="myProfileSection"
+  >
+    <div
+      className="myProfileMissionsList"
+    >
+      <h1>
+        My Missions
+      </h1>
+      <ul
+        className="myProfileMissionsList"
+      />
+    </div>
+    <div
+      className="myProfileRocketsList"
+    >
+      <h1>
+        My Rockets
+      </h1>
+      <ul
+        className="myProfileRocketsList"
+      />
+    </div>
+  </section>,
+]
+`;

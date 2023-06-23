@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Header test renders the Header 1`] = `
 <header>
   <div

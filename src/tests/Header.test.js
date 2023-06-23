@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../app/store';
+import store from '../redux/store';
 import Header from '../Components/Header';
 
 describe('Header test', () => {

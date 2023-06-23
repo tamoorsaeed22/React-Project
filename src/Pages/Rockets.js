@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Header from '../Components/Header';
-import { fetchRockets, selectRockets, reserveRocket } from '../app/features/rocketsReducer';
+import { fetchRockets, selectRockets, reserveRocket } from '../redux/rocket/rocketsReducer';
 
 const Rockets = () => {
   // Grab the rocket array from the state

@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import Header from '../Components/Header';
 import styles from './MyProfile.module.css';
-import { selectRockets } from '../app/features/rocketsReducer';
-import { selectMissions } from '../app/features/missionReducer';
+import { selectRockets } from '../redux/rocket/rocketsReducer';
+import { selectMissions } from '../redux/mission/missionReducer';
 
 const MyProfile = () => {
   const rocketsList = useSelector(selectRockets);

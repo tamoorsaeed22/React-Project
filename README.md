@@ -83,3 +83,7 @@ Give a ⭐️ if you like this project!
   <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
+
+> This project has [MIT license](./LICENSE)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

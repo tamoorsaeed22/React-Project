@@ -1,15 +1,20 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Header from '../Components/Header';
-import { fetchMissions } from '../app/features/missionReducer';
+import { fetchMissions, selectMissions, joinMission } from '../app/features/missionReducer';
 import styles from './Missions.module.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector(selectMissions);
+
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (!missions.length) dispatch(fetchMissions());
+  }, [dispatch, missions.length]);
+
+  const clickHandler = (id) => {
+    dispatch(joinMission(id));
+  };
 
   return (
     <>
@@ -29,10 +34,36 @@ const Missions = () => {
               <td className={styles.mission_name}>{missions.mission_name}</td>
               <td>{missions.description}</td>
               <td>
-                <span>NOT A MEMBER</span>
+                {missions.joined && (
+                <span className="joinSpanStyle">
+                  Active Member
+                </span>
+                )}
+                {!missions.joined && (
+                <span className="nonjoinSpanStyle">
+                  NOT A MEMBER
+                </span>
+                )}
               </td>
               <td>
-                <button type="button">Join Mission</button>
+                {missions.joined && (
+                  <button
+                    type="button"
+                    className="joinStyle"
+                    onClick={() => clickHandler(missions.id)}
+                  >
+                    Leave Mission
+                  </button>
+                )}
+                {!missions.joined && (
+                  <button
+                    type="button"
+                    className="nonjoinStyle"
+                    onClick={() => clickHandler(missions.id)}
+                  >
+                    Join Mission
+                  </button>
+                )}
               </td>
             </tr>
           ))}
